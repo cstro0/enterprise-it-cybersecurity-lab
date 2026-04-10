@@ -94,14 +94,14 @@ Specs used for MY system (16GB RAM, 1TB Storage, 12 Processors)
 
 ## 🚶 Walkthrough (Work in Progress)
 
-This section demonstrates administrative tasks performed within the domain environment.
+This section demonstrates administrative tasks performed within the domain environment, including images and steps taken.
 
 ### ✅ Completed
 - Created Organizational Units (HR, IT, Sales)
 - Created domain users
 - Configured initial password policies
 
-### ⏳ In Progress
+### ⏳ Not Documented Yet
 - Group Policy Object (GPO) configuration
 - Security group implementation
 - Folder permissions and access control
