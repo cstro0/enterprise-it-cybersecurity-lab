@@ -56,7 +56,7 @@ This phase focuses on building a foundational enterprise Active Directory enviro
 ## 🖥️ Lab Setup
 
 ### 💻 Virtual Machines
-
+Specs used for MY system (16GB RAM, 1TB Storage, 12 Processors)
 | VM | Hostname | RAM | vCPU | Disk |
 |----|---------|-----|------|------|
 | Windows Server 2022 | DC01 | 3–4 GB | 2 | 60 GB |
