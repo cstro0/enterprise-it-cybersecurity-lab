@@ -11,13 +11,13 @@
 
 ## 🚶 Walkthrough (Work in Progress)
 
-This section will demonstrate administrative tasks performed within the domain environment.
+This section will demonstrate administrative tasks performed within the domain environment, including images and steps taken.
 
 ### Completed
 - Creating users
 - Creating OUs
 
-### In Progress
+### In Progress (Completed but not documented)
 - Group Policy Objects (GPOs)
 - Password resets
 - Account lockout simulation
