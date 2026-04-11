@@ -1,9 +1,9 @@
 # Phase 1 – Active Directory Environment Setup
 
-## 🧠 Overview
+## Overview
 This phase focuses on building a foundational enterprise Active Directory environment using virtual machines. The goal is to simulate a real-world IT infrastructure that will later be expanded with security monitoring and attack simulation.
 
-## 📚 What You Will Learn
+## What You Will Learn
 - Creating and managing Active Directory objects (Users, OUs, Groups, GPOs)
 - Network configuration (IP addressing, DNS, subnetting basics)
 - VM configuration and connectivity troubleshooting
@@ -12,7 +12,7 @@ This phase focuses on building a foundational enterprise Active Directory enviro
 
 ---
 
-## 🎯 Goals
+## Goals
 
 1. **Set Up Virtual Machines**
    - Windows Server 2022 (Domain Controller)
@@ -56,10 +56,10 @@ This phase focuses on building a foundational enterprise Active Directory enviro
    - Account lockouts
 ---
 
-## 🖥️ Lab Setup
+## Lab Setup
 
-### 💻 Virtual Machines
-Specs used for MY system (16GB RAM, 1TB Storage, 12 Processors)
+### Virtual Machines
+These are the specs that I for the VMs in my system (16GB RAM, 1TB Storage, 12 Processors)
 | VM | Hostname | RAM | vCPU | Disk |
 |----|---------|-----|------|------|
 | Windows Server 2022 | DC01 | 3–4 GB | 2 | 60 GB |
@@ -67,7 +67,7 @@ Specs used for MY system (16GB RAM, 1TB Storage, 12 Processors)
 
 ---
 
-### 🌐 Network Configuration
+### Network Configuration
 
 #### Domain Controller
 - IP Address: `172.16.0.10`
@@ -97,7 +97,7 @@ Specs used for MY system (16GB RAM, 1TB Storage, 12 Processors)
 
 #  Walkthrough (Work in Progress)
 
-This section provides a complete walkthrough that hits every objective of Active Directory.
+This section provides a complete walkthrough of the lab after you have already set up the VMs
 
 In Progress
 - GPOs
@@ -367,9 +367,9 @@ don't, don't. Additionally the manager can edit the file if need be.
 
 ---
 
-## 🔍 What I Learned
+## Here's Everything That I Learned
 
-### 🧩 System Compatibility & Troubleshooting
+### System Compatibility & Troubleshooting
 - Encountered Windows 11 hardware requirement issues (TPM, Secure Boot)
 - Attempted registry bypass methods
 - Learned differences between registry hives
@@ -377,13 +377,13 @@ don't, don't. Additionally the manager can edit the file if need be.
 
 ---
 
-### ⚙️ Resource Management
+### Resource Management
 - Identified time inefficiencies during troubleshooting
 - Adjusted approach to prioritize progress over perfection
 
 ---
 
-### 🌐 Networking & Connectivity
+### Networking & Connectivity
 
 - Used `ipconfig` and `ping` for troubleshooting
 - Encountered: **“Destination host unreachable”**
@@ -391,13 +391,13 @@ don't, don't. Additionally the manager can edit the file if need be.
   - NAT = internet access but isolated VMs
   - Internal Network = VM-to-VM communication
 
-✅ Solution:
+Solution:
 - Switched both VMs to **Internal Network**
 - Successfully established connectivity between client and domain controller
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 In the next phase, this environment will be expanded with security tools:
 
