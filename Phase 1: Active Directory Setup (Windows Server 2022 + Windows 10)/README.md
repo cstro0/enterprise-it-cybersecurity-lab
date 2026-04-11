@@ -95,9 +95,9 @@ Specs used for MY system (16GB RAM, 1TB Storage, 12 Processors)
 
 ---
 
-## 🚶 Walkthrough (Work in Progress)
+#  Walkthrough (Work in Progress)
 
-# Creating OUs & User Creation
+## 1️⃣Creating OUs & User Creation
 
 Organizational Units in Active Directory are containers used to organize objects like users,
 groups, and computers into logical structures like departments. They are needed to efficiently
@@ -106,9 +106,11 @@ apply Group Policies and delegate administrative control without affecting the e
 In this lab, we will create 4 OUs:
 
 Parent OU
+
 1. Our corporation's OU, containing the 3 departments of our business
 
 Child OUs
+
 2. Department #1 - Sales
 
 3. Department #2 - IT
@@ -120,13 +122,13 @@ VM.
 
 ---
 
-## 1. Creating your corporation's OU
+### <ins>Creating your corporation's OU</ins>
 
-a. Navigate to the Server Manager on your server VM  
-b. Click Tools -> Active Directory Users and Computers  
-c. Right-click your domain  
-d. Click New -> Organizational Unit  
-e. Because my name is Craig, I will title mine "Craigs Corporation" (Leave the box
+1.  Navigate to the Server Manager on your server VM  
+2. Click Tools -> Active Directory Users and Computers  
+3. Right-click your domain  
+4. Click New -> Organizational Unit  
+5. Because my name is Craig, I will title mine "Craigs Corporation" (Leave the box
 checked to prevent accidental deletion)
 
 Here is what my parent OU looks like:
@@ -140,11 +142,11 @@ departments (Sales, IT, and HR)
 
 ---
 
-## 2. Creating the department OUs
+### <ins>Creating the department OUs</ins>
 
-a. Right-click your corporation OU  
-b. Click New -> Organizational Unit  
-c. Create 3 separate OUs for HR, IT, and Sales using this process. It should look
+1. Right-click your corporation OU  
+2. Click New -> Organizational Unit  
+3. Create 3 separate OUs for HR, IT, and Sales using this process. It should look
 like this:
 
 ```
@@ -161,35 +163,35 @@ adding them.
 
 ---
 
-## 3. Creating Users in OUs
+### <ins>Creating Users in OUs</ins>
 
 For this example we will be creating the users Tom Brady (our Sales manager) and
 Patrick Mahomes (our Sales staff) into the Sales department's OU according to our
 domain user table.
 
-a. Right-click on the Sales OU  
-b. Click New -> User  
-c. Enter Patrick Mahomes' according to the domain user table  
-   i. First name: Patrick  
-   ii. Last name: Mahomes  
-   iii. User logon name: PMahomes  
-d. Click Next  
-e. Set this password to something simple (e.g. @Password1), because this is only
+1. Right-click on the Sales OU  
+2. Click New -> User  
+3. Enter Patrick Mahomes' according to the domain user table  
+   - First name: Patrick  
+   - Last name: Mahomes  
+   - User logon name: PMahomes  
+4. Click Next  
+5. Set this password to something simple (e.g. @Password1), because this is only
 the initial password.  
-f. Make sure "User must change password at next logon" box is checked!  
-   i. Not doing so would be a violation of security, because the admin (you)
-   would know the user's password!  
-g. Leave "User cannot change password", "Password never expires", and "Account
+6. Make sure "User must change password at next logon" box is checked!  
+   - Not doing so would be a violation of security, because the admin (you)
+would know the user's password!  
+7. Leave "User cannot change password", "Password never expires", and "Account
 is disabled" unchecked.  
-   i. IT should not restrict normal users from performing a password change,
+   - IT should not restrict normal users from performing a password change,
    this could create user authentication issues and slow down business
    operations  
-   ii. Passwords should ALWAYS expire for normal users in the event of an
+   - Passwords should ALWAYS expire for normal users in the event of an
    undetected breach or password leak. This limits the attacker's window to
    be able to use the illegally obtained employee credentials.  
-   iii. The account should not be disabled, this is unnecessary in the scenario  
-h. Click Next -> Finish  
-i. Repeat the previous steps to create every user in their respective department
+   - The account should not be disabled, this is unnecessary in the scenario  
+8. Click Next -> Finish  
+9. Repeat the previous steps to create every user in their respective department
 using their credentials according to the domain user table
 
 After you create your users in their department OU, it should look like this:
@@ -203,7 +205,7 @@ configs much easier.
 
 ---
 
-# Creating Security Groups & Adding Users
+## 2️⃣Creating Security Groups & Adding Users
 
 We need to add our users to Security Groups so that configurations to authorization and
 permissions are scalable and applicable to many users at once.
@@ -213,15 +215,15 @@ having one for every Sales User and another for our Sales Manager.
 
 ---
 
-## 1. Creating the Security Groups
+### <ins>Creating the Security Groups</ins>
 
-a. Navigate to the Server manager on your Server VM  
-b. Click Tools -> Active Directory Users and Computers  
-c. Find the Sales OU that you created inside of your Corporation OU and right-click
+1. Navigate to the Server manager on your Server VM  
+2. Click Tools -> Active Directory Users and Computers  
+3. Find the Sales OU that you created inside of your Corporation OU and right-click
 it.  
-d. Click New -> Group  
-e. Type in Sales Users for the Name, and click OK  
-f. Repeat this process again, instead creating a Security Group for Sales Managers
+4. Click New -> Group  
+5. Type in Sales Users for the Name, and click OK  
+6. Repeat this process again, instead creating a Security Group for Sales Managers
 
 The inside of your department OU should look something like this as of now:
 
@@ -231,17 +233,17 @@ The inside of your department OU should look something like this as of now:
 
 ---
 
-## 2. Adding Users to Security Groups
+### <ins>Adding Users to Security Groups</ins>
 
-a. Double-click on Sales Users and navigate to the Members tab  
-b. Click Add  
-c. Enter the object name of the user that you want to add to the security group (This
+1. Double-click on Sales Users and navigate to the Members tab  
+2. Click Add  
+3. Enter the object name of the user that you want to add to the security group (This
 is case-sensitive, be careful), in this case, it is Patrick Mahomes  
-d. Left-click "Check Names" to verify that you are adding the correct user. You will
-have performed this correctly if the correct email auto-fills within the object name
+4. Left-click "Check Names" to verify that you are adding the correct user.
+   - You will have performed this correctly if the correct email auto-fills within the object name
 field  
-e. Click OK -> Add -> Apply  
-f. Try repeating this process by adding Tom Brady to the Sales Managers group,
+5. Click OK -> Add -> Apply  
+6. Try repeating this process by adding Tom Brady to the Sales Managers group,
 and applying the same process to the other departments
 
 To verify that the correct user was added to the correct Security Group, simply double-click one
@@ -257,7 +259,7 @@ of users!
 
 ---
 
-# File Sharing & Access Control Implementation
+# 3️⃣File Sharing & Access Control Implementation
 
 All of our employees need to access files so that business operations can run smoothly.
 However, one employee might not need to view or modify the same data as another employee
@@ -279,12 +281,12 @@ department (HR and IT)
 
 ---
 
-## 1. Creating the Folder and Text Document File
+### <ins>Creating the Folder and Text Document File</ins>
 
-a. From the Server VM desktop, create a new folder named "Sales Data"  
-b. Double-click on Sales the Data folder and create a new Text Document within the
+1. From the Server VM desktop, create a new folder named "Sales Data"  
+2. Double-click on Sales the Data folder and create a new Text Document within the
 folder  
-c. Name the document "Sales Reports"
+3. Name the document "Sales Reports"
 
 ```
 {INSERT IMAGE}
@@ -298,13 +300,13 @@ affect the child documents. With that in mind, we will set permissions for the S
 
 ---
 
-## 2. Set Permissions
+### <ins>Set Permissions</ins>
 
-a. Right-click the Sales Data folder and click Properties -> Security -> Edit -> Add  
-b. Add Sales Users security group. Apply the default perms as they appear (Read &
+1. Right-click the Sales Data folder and click Properties -> Security -> Edit -> Add  
+2. Add Sales Users security group. Apply the default perms as they appear (Read &
 Execute)  
-c. Add Sales Managers security group. Apply the permissions to Write and Modify  
-d. Share the Folder With the Network
+3. Add Sales Managers security group. Apply the permissions to Write and Modify  
+4. Share the Folder With the Network
 
 Because we applied the permissions to security groups, any user added to a security group will
 inherit those same permissions.
@@ -314,11 +316,12 @@ inherit those same permissions.
 As of now, the folder only exists on the server, we need to push it to our client PC so that our
 domain users can interact with it.
 
-## 3. Sharing the File with Network
+### <ins>Sharing the File with Network</ins>
 
-a. Right-click folder and click Properties -> Sharing -> Advanced Sharing  
-b. Check "Share this folder"  
-c. Click Permissions
+1. Right-click folder and click Properties -> Sharing -> Advanced Sharing  
+2. Check "Share this folder"  
+3. Click Permissions
+4. Add Domain Users and give them Full Control
 
 Now that we made the sales file, assigned read/write/modify permissions, and pushed it to the
 network, we should test the results on the accounts of our sales manager, sales users, and
@@ -336,17 +339,17 @@ Test permissions by going on different client accounts. Use Win +R and enter:
 
 Navigate to the .txt file in the Sales Data folder. Notice how:
 
-i. Sales User can read Sales Reports.txt  
+1. Sales User can read Sales Reports.txt  
 ```
 {INSERT IMAGE}
 ```
 
-ii. Sales Manager can write on Sales Reports.txt  
+2. Sales Manager can write on Sales Reports.txt  
 ```
 {INSERT IMAGE}
 ```
 
-iii. Non-sales user can't perform read or write on Sales Reports.txt  
+3. Non-sales user can't perform read or write on Sales Reports.txt  
 ```
 {INSERT IMAGE}
 ```
