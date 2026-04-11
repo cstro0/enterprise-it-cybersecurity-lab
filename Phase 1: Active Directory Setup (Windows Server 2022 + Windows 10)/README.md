@@ -98,6 +98,7 @@ Specs used for MY system (16GB RAM, 1TB Storage, 12 Processors)
 #  Walkthrough (Work in Progress)
 
 This section provides a complete walkthrough that hits every objective of Active Directory.
+
 In Progress
 - GPOs
 - Real-world Tasks
