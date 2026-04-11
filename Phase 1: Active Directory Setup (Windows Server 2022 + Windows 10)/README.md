@@ -83,7 +83,7 @@ These are the specs that I for the VMs in my system (16GB RAM, 1TB Storage, 12 P
 
 ---
 
-### 🔧 Key Setup Steps
+### Key Setup Steps
 
 - Installed Windows Server 2022 and configured static IP
 - Installed Active Directory Domain Services (AD DS)
