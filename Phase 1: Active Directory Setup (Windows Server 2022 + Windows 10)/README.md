@@ -212,7 +212,7 @@ configs much easier.
 
 ---
 
-### 2️⃣Creating Security Groups & Adding Users
+## 2️⃣Creating Security Groups & Adding Users
 
 We need to add our users to Security Groups so that configurations to authorization and
 permissions are scalable and applicable to many users at once.
@@ -266,7 +266,7 @@ of users!
 
 ---
 
-# 3️⃣File Sharing & Access Control Implementation
+## 3️⃣File Sharing & Access Control Implementation
 
 All of our employees need to access files so that business operations can run smoothly.
 However, one employee might not need to view or modify the same data as another employee
