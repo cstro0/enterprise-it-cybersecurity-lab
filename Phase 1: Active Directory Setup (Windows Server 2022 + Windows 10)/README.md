@@ -65,8 +65,6 @@ These are the specs that I for the VMs in my system (16GB RAM, 1TB Storage, 12 P
 | Windows Server 2022 | DC01 | 3–4 GB | 2 | 60 GB |
 | Windows 10 Client | WIN10-CLIENT | 2–3 GB | 1 | 40 GB |
 
----
-
 ### Network Configuration
 
 #### Domain Controller
@@ -80,8 +78,6 @@ These are the specs that I for the VMs in my system (16GB RAM, 1TB Storage, 12 P
 - IP Address: `172.16.0.20`
 - Subnet Mask: `255.255.0.0`
 - DNS: `172.16.0.10`
-
----
 
 ### Key Setup Steps
 
