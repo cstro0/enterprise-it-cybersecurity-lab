@@ -42,15 +42,18 @@ This phase focuses on building a foundational enterprise Active Directory enviro
      - Manager-only folders
      - Company-wide read-only folder
 
-6. **Group Policy (GPOs)** *(In Progress)*
+6. **Group Policy (GPOs)** 
    - Password policies
-   - Desktop configurations
+   - Account lockout thresholds
    - Apply to OUs
 
-7. **Simulated Real-World Tasks** *(In Progress)*
+7. **Simulated Real-World Tasks** 
    - Password resets
    - Account lockouts
 
+. **User Creation with Powershell Automation** *IN PROGRESS*
+   - Password resets
+   - Account lockouts
 ---
 
 ## 🖥️ Lab Setup
@@ -96,17 +99,7 @@ Specs used for MY system (16GB RAM, 1TB Storage, 12 Processors)
 
 This section demonstrates administrative tasks performed within the domain environment, including images and steps taken.
 
-### ✅ Completed
-- Created Organizational Units (HR, IT, Sales)
-- Created domain users
-- Configured initial password policies
-
-### ⏳ Not Documented Yet
-- Group Policy Object (GPO) configuration
-- Security group implementation
-- Folder permissions and access control
-- Password reset simulations
-- Account lockout testing
+*IN PROGRESS*
 
 ---
 
