@@ -1,9 +1,9 @@
 # Phase 1 – Active Directory Environment Setup
 
-## Overview
+# Overview
 This phase focuses on building a foundational enterprise Active Directory environment using virtual machines. The goal is to simulate a real-world IT infrastructure that will later be expanded with security monitoring and attack simulation.
 
-## What You Will Learn
+# What You Will Learn
 - Creating and managing Active Directory objects (Users, OUs, Groups, GPOs)
 - Network configuration (IP addressing, DNS, subnetting basics)
 - VM configuration and connectivity troubleshooting
@@ -12,7 +12,7 @@ This phase focuses on building a foundational enterprise Active Directory enviro
 
 ---
 
-## Goals
+# Goals
 
 1. **Set Up Virtual Machines**
    - Windows Server 2022 (Domain Controller)
@@ -56,7 +56,7 @@ This phase focuses on building a foundational enterprise Active Directory enviro
    - Account lockouts
 ---
 
-## Lab Setup
+# Lab Setup
 
 ### Virtual Machines
 These are the specs that I for the VMs in my system (16GB RAM, 1TB Storage, 12 Processors)
@@ -369,7 +369,7 @@ don't, don't. Additionally the manager can edit the file if need be.
 
 ---
 
-## Here's Everything That I Learned
+# Here's Everything That I Learned
 
 ### System Compatibility & Troubleshooting
 - Encountered Windows 11 hardware requirement issues (TPM, Secure Boot)
@@ -399,7 +399,7 @@ Solution:
 
 ---
 
-## Next Steps
+# Next Steps
 
 In the next phase, this environment will be expanded with security tools:
 
