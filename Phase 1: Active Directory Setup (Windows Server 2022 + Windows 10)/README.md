@@ -63,7 +63,7 @@ These are the specs that I for the VMs in my system (16GB RAM, 1TB Storage, 12 P
 | VM | Hostname | RAM | vCPU | Disk |
 |----|---------|-----|------|------|
 | Windows Server 2022 | DC01 | 3–4 GB | 2 | 60 GB |
-| Windows 10 Client | WIN10-CLIENT | 2–3 GB | 1 | 40–60 GB |
+| Windows 10 Client | WIN10-CLIENT | 2–3 GB | 1 | 40 GB |
 
 ---
 
