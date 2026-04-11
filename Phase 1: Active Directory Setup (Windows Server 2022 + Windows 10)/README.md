@@ -85,13 +85,14 @@ These are the specs that I for the VMs in my system (16GB RAM, 1TB Storage, 12 P
 
 ### Key Setup Steps
 
-- Installed Windows Server 2022 and configured static IP
-- Installed Active Directory Domain Services (AD DS)
-- Promoted server to Domain Controller
-- Created domain: `Craig.com`
-- Installed Windows 10 client
-- Configured networking on client
-- Joined client to domain
+- Created Windows Server and Windows 10 client VMs using VirtualBox  
+- Configured internal networking on both VMs for VM-to-VM communication  
+- Assigned static IP addresses and DNS settings
+- Installed and configured Active Directory Domain Services
+- Created domain: `Craig.com`  
+- Promoted server to Domain Controller  
+- Joined Windows 10 client to the domain  
+**For detailed setup steps, refer to **[Detailed Lab Setup](docs/detailed-lab-setup.md)**
 
 ---
 
