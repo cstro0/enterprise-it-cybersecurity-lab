@@ -42,16 +42,16 @@ This phase focuses on building a foundational enterprise Active Directory enviro
      - Manager-only folders
      - Company-wide read-only folder
 
-6. **Group Policy (GPOs)** 
+6. **Group Policy (GPOs)** *IN PROGRESS*
    - Password policies
    - Account lockout thresholds
    - Apply to OUs
 
-7. **Simulated Real-World Tasks** 
+7. **Simulated Real-World Tasks** *IN PROGRESS*
    - Password resets
    - Account lockouts
 
-. **User Creation with Powershell Automation** *IN PROGRESS*
+8. **User Creation with Powershell Automation** *IN PROGRESS*
    - Password resets
    - Account lockouts
 ---
