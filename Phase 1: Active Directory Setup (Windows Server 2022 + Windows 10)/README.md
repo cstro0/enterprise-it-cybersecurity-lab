@@ -212,7 +212,7 @@ configs much easier.
 
 ---
 
-## 2️⃣Creating Security Groups & Adding Users
+### 2️⃣Creating Security Groups & Adding Users
 
 We need to add our users to Security Groups so that configurations to authorization and
 permissions are scalable and applicable to many users at once.
