@@ -110,7 +110,9 @@ Parent OU
 
 Child OUs
 2. Department #1 - Sales
+
 3. Department #2 - IT
+
 4. Department #3 - HR
 
 The following demonstrates how to create Organizational Units from your Windows Server 2022
