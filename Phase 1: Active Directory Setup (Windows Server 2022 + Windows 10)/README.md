@@ -92,7 +92,7 @@ These are the specs that I for the VMs in my system (16GB RAM, 1TB Storage, 12 P
 - Created domain: `Craig.com`  
 - Promoted server to Domain Controller  
 - Joined Windows 10 client to the domain  
-**For detailed setup steps, refer to **[Detailed Lab Setup](docs/detailed-lab-setup.md)**
+**For detailed setup steps, refer to **[Detailed Lab Setup](Phase 1: Active Directory Setup (Windows Server 2022 + Windows 10)/DOCS/detailed-lab-setup.md)**
 
 ---
 
