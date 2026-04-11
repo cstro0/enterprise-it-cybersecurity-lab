@@ -8,7 +8,7 @@ This project simulates a real-world enterprise environment using Active Director
 - Phase 3: Attack Simulation (Kali + Wireshark)
 
 ## Skills
-- Active Directory
+- Active Directory & Powershell automation
 - Network troubleshooting
 - SIEM (Splunk)
 - Endpoint logging (Sysmon)
