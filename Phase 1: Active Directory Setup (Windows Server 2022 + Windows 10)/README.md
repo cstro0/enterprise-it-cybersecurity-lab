@@ -104,25 +104,23 @@ groups, and computers into logical structures like departments. They are needed 
 apply Group Policies and delegate administrative control without affecting the entire domain.
 
 In this lab, we will create 4 OUs:
+
 Parent OU
+   1. Our corporation's OU, containing the 3 departments of our business
 
-1. Our corporation's OU, containing the 3 departments of our business
 Child OUs
-
-2. Department #1 - Sales
-
-3. Department #2 - IT
-
-4. Department #3 - HR
+   2. Department #1 - Sales
+   3. Department #2 - IT
+   4. Department #3 - HR
 
 Afterwards it should follow a structure like this:
 CraigCorp
-
-Sales
-
-IT
-
-HR
+|
+\_____Sales
+|
+\_____IT
+|
+\_____HR
 
 The following demonstrates how to create Organizational Units from your Windows Server 2022
 VM.
