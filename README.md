@@ -13,3 +13,5 @@ This project simulates a real-world enterprise environment using Active Director
 - SIEM (Splunk)
 - Endpoint logging (Sysmon)
 - Traffic analysis (Wireshark)
+
+**This is still a work in progress, please come back back soon for updates!**
