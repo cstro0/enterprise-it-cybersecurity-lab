@@ -16,7 +16,7 @@ This phase focuses on building a foundational enterprise Active Directory enviro
 
 1. **Set Up Virtual Machines**
    - Windows Server 2022 (Domain Controller)
-   - Windows 10 (Client)
+   - Windows 11 (Client)
 
 2. **Network Configuration**
    - Configure static IP addresses
@@ -52,18 +52,17 @@ This phase focuses on building a foundational enterprise Active Directory enviro
    - Account lockouts
 
 8. **User Creation with Powershell Automation** *IN PROGRESS*
-   - Password resets
-   - Account lockouts
+   - Bulk user creation, OU assignment, group membership, and
 ---
 
 # Lab Setup
 
 ### Virtual Machines
-These are the specs that I for the VMs in my system (16GB RAM, 1TB Storage, 12 Processors)
+These are the specs that I for the VMs in my system (64GB RAM, 256GB Storage, 6 Processors)
 | VM | Hostname | RAM | vCPU | Disk |
 |----|---------|-----|------|------|
-| Windows Server 2022 | DC01 | 3–4 GB | 2 | 60 GB |
-| Windows 10 Client | WIN10-CLIENT | 2–3 GB | 1 | 40 GB |
+| Windows Server 2022 | DC01 | 4-6 GB | 2 | 50 GB |
+| Windows 11 Client | WIN11-CLIENT | 6-8 GB | 2 | 80 GB |
 
 ### Network Configuration
 
@@ -81,7 +80,7 @@ These are the specs that I for the VMs in my system (16GB RAM, 1TB Storage, 12 P
 
 ### Key Setup Steps
 
-- Created Windows Server and Windows 10 client VMs using VirtualBox  
+- Created Windows Server and Windows 11 client VMs using VirtualBox  
 - Configured internal networking on both VMs for VM-to-VM communication  
 - Assigned static IP addresses and DNS settings
 - Installed and configured Active Directory Domain Services
@@ -403,7 +402,5 @@ In the next phase, this environment will be expanded with security tools:
 - Splunk (log aggregation and analysis)
 - Wireshark (network traffic analysis)
 - Kali Linux (attack simulation)
-
-This will transform the lab into a **mini Security Operations Center (SOC)** environment.
 
 ---
