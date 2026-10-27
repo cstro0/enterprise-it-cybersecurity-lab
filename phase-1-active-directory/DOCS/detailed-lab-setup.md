@@ -98,7 +98,7 @@ From the Windows Server lock screen:
 ![](../screenshots/windows-server-rename-1.png)
 
 6. Click Change  
-7. Set name to: **DC01**\
+7. Set name to: **DC01**
 8. Click OK
 
 ![](../screenshots/windows-server-rename-2.png)
