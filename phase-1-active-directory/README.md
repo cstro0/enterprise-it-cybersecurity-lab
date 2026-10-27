@@ -88,7 +88,7 @@ These are the specs that I for the VMs in my system (64GB RAM, 256GB Storage, 6 
 - Promoted server to Domain Controller  
 - Joined Windows 10 client to the domain
  
-**For detailed setup steps, refer to **[Detailed Lab Setup](./DOCS/detailed-lab-setup.md)**
+## **For detailed setup steps, refer to **[Detailed Lab Setup](./DOCS/detailed-lab-setup.md)**
 
 ---
 
