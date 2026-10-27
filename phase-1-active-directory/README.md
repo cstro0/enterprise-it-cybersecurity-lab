@@ -1,4 +1,7 @@
-# Phase 1 – Active Directory Environment Setup
+# Phase 1 – Active Directory Domain Services
+
+
+## **For detailed setup steps, PLEASE refer to **[Detailed Lab Setup](./DOCS/detailed-lab-setup.md)**
 
 # Overview
 This phase focuses on building a foundational enterprise Active Directory environment using virtual machines. The goal is to simulate a real-world IT infrastructure that will later be expanded with security monitoring and attack simulation.
