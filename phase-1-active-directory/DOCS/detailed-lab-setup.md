@@ -26,7 +26,7 @@ Your initial settings should appear similar to the following image.
 4. Click Next or **Specify virtual hardware** and **Specify virtual hard disk**
 5. Allocate your resources according to your specs and proceed
 
-![Windows Server Virtual Hardware Specifications](..\screenshots\virtualbox-windows-server-virtual-hardware-specifications.png)
+![Windows Server Virtual Hardware Specifications](../screenshots/virtualbox-windows-server-virtual-hardware-specifications.png)
 
 6. Click Next
 7. Click Finish
@@ -46,7 +46,7 @@ This allows VM-to-VM communication, with each VM behaving as if they are connect
 
 See image below for assistance.
 
-![Windows Server VM VirtualBox Network Setting](..\screenshots\virtualbox-windows-server-virtual-network-settings.png)
+![Windows Server VM VirtualBox Network Setting](../screenshots/virtualbox-windows-server-virtual-network-settings.png)
 
 ### Initial OS Setup
 
@@ -66,11 +66,11 @@ In the VM:
 5. Click Next
 6. Acccept the Microsoft Software License Terms and click Next
 
-![Windows Server OS Installation](..\screenshots\windows-server-operating-system-selection.png)
+![Windows Server OS Installation](../screenshots/windows-server-operating-system-selection.png)
 
 7. Click "Custom" installation
 
-![Windows Server OS Installation Type](..\screenshots\windows-server-operating-system-installation-type.png)
+![Windows Server OS Installation Type](../screenshots/windows-server-operating-system-installation-type.png)
 
 8. Choose the drive in which you want the OS installed, then click Next
 
@@ -80,7 +80,7 @@ Afterwards, you will be taken to the Customize Settings screen.
 
 9. Create and take note of a password for the operating systems's built-in administrator account
 
-![Customize Settings Screen](..\screenshots\windows-server-initial-password.png)
+![Customize Settings Screen](../screenshots/windows-server-initial-password.png)
 
 ### Renaming the Server
 
@@ -95,19 +95,19 @@ From the Windows Server lock screen:
 4. Click on Local Server in the left window pane
 5. Click the Computer Name
 
-![](..\screenshots\windows-server-rename-1.png)
+![](../screenshots/windows-server-rename-1.png)
 
 6. Click Change  
 7. Set name to: **DC01**\
 8. Click OK
 
-![](..\screenshots\windows-server-rename-2.png)
+![](../screenshots/windows-server-rename-2.png)
 
 8. Restart the Windows inside of the VM (Do not close or shut down the VM through VirtualBox)
 
 You should see the Local Server under a new computer name now.
 
-![alt text](..\screenshots\windows-server-rename-3.png)
+![alt text](../screenshots/windows-server-rename-3.png)
 
 ---
 
@@ -117,7 +117,7 @@ At this point, your server does not have the capability to recieve an IP address
 
 This can be confirmed by using the `ipconfig` command in the Command Prompt.
 
-![Windows Server ipconfig](..\screenshots\windows-server-initial-ipconfig-1.png)
+![Windows Server ipconfig](../screenshots/windows-server-initial-ipconfig-1.png)
 
 If your IPv4 Address is preceded by the word "Autoconfiguration", or is followed by an IP address that starts with 169.254.X.X, then your device is using an APIPA address and you will need to assign your device's IPv4.
 
@@ -153,7 +153,7 @@ You might be asking, "Why is the DNS set to 127.0.0.1?"
 
 After running the `ipconfig /all` command in Command Prompt, your Host Name, IPv4 Address, Subnet Mask, and DNS Server configurations should look something like this.
 
-![Correct Windows Server Network Configuration](..\screenshots\windows-server-initial-ipconfig-2.png)
+![Correct Windows Server Network Configuration](../screenshots/windows-server-initial-ipconfig-2.png)
 
 ---
 
@@ -167,20 +167,20 @@ From Server Manager:
 4. Choose Active Directory **Domain** Services
     - Do NOT choose Active Directory Certificate Services
 
-![AD DS Installation](..\screenshots\windows-server-ad-installation-1.png)
+![AD DS Installation](../screenshots/windows-server-ad-installation-1.png)
 
 5. Click Add Features
 6. Proceed through the menu until you reach the Confirmation page
 7. Click Install and wait for ADDS to finish installing
 8. Click **Promote this server to a domain controller**
 
-![Promote to Domain Controller](..\screenshots\windows-server-ad-installation-2.png)
+![Promote to Domain Controller](../screenshots/windows-server-ad-installation-2.png)
 
 9. Click **Add new forest**
 10. Domain name: **[yourname].com**
     - For example, I chose "Craig.com"
 
-![Domain Name](..\screenshots\windows-server-ad-installation-3.png)
+![Domain Name](../screenshots/windows-server-ad-installation-3.png)
 
 ```
 Note: The domain name you choose is the name of the logical group of all objects within your network. This windows server, being a domain controller, will host ADDS amd manage security, policies, and other data for hosts on the domain (Craig.com for instance).
@@ -211,18 +211,18 @@ From the VirtualBox Machines screen:
 
 Your initial settings should appear similar to the following image.
 
-![Windows 11 Machine Name and Operating System Settings](..\screenshots\virtualbox-windows-11-machine-name-and-operating-system-settings.png)
+![Windows 11 Machine Name and Operating System Settings](../screenshots/virtualbox-windows-11-machine-name-and-operating-system-settings.png)
 
 4. Click Next or **Specify virtual hardware** and **Specify virtual hard disk**
 5. Allocate your resources according to your specs and proceed
 
-![Windows 11 Virtual Hardware Specifications 1](..\screenshots\virtualbox-windows-11-virtual-hardware-specifications-1.png)
+![Windows 11 Virtual Hardware Specifications 1](../screenshots/virtualbox-windows-11-virtual-hardware-specifications-1.png)
 
 ```
 The Windows 11 operating system requires at leat 70-80 GB of space to boot properly.
 ```
 
-![Windows 11 Virtual Hardware Specifications 2](..\screenshots\virtualbox-windows-11-virtual-hardware-specifications-2.png)
+![Windows 11 Virtual Hardware Specifications 2](../screenshots/virtualbox-windows-11-virtual-hardware-specifications-2.png)
 
 6. Click Next/Finish
 
@@ -253,13 +253,13 @@ From VirtualBox:
 5. Click **I don't have a product key**
 6. Select **Windows 11 Pro** and proceed
 
-![Windows 11 Pro Selection](..\screenshots\windows-11-select-image-screen.png)
+![Windows 11 Pro Selection](../screenshots/windows-11-select-image-screen.png)
 
 7. Proceed with installation
 8. After the installation is complete, proceed through the second setup
 9. Name your device, then click Next
 
-![Name Your Device](..\screenshots\windows-11-device-name.png)
+![Name Your Device](../screenshots/windows-11-device-name.png)
 
 10. Click **Set up for personal use**, then Next
     - This will allows you to practice AD in the simulation without needing an organizational account.
@@ -271,14 +271,14 @@ When prompted to sign into a Microsoft account:
 13. Press `Shift + F10` to open the Command Prompt
 14. Enter the command: `start ms-cxh:localonly`
 
-![start ms-cxh:localonly](..\screenshots\windows-11-signin-cmd-bypass.png)
+![start ms-cxh:localonly](../screenshots/windows-11-signin-cmd-bypass.png)
 
 ```
 This will bypass the mandatory Microsoft sign-in and internet connection. Remember, this lab will be hosted locally.
 
 Note: YOU MAY NEED TO USE ALT + TAB TO FIND THE NEW WINDOW THAT OPENS AFTER RUNNING THE COMMAND.
 ```
-![Local User](..\screenshots\windows-11-local-user-1.png)
+![Local User](../screenshots/windows-11-local-user-1.png)
 
 15. Create local account:
     - Username: clientuser
@@ -338,7 +338,7 @@ On the client VM:
     - Default gateway: (leave blank)  
     - Preferred DNS: `172.16.0.10`  
 
-![Windows 11 Client #1 IPv4 Configuration](..\screenshots\windows-11-ipv4-configuration-example-1.png)
+![Windows 11 Client #1 IPv4 Configuration](../screenshots/windows-11-ipv4-configuration-example-1.png)
 
 Why did we configure the IPv4 settings this way?
 
@@ -365,7 +365,7 @@ Keep note of the addresses of you do create more VMs!
 3. Run `ping 172.16.0.10` to see if your host is reachable
 - The coniguration and ping attempt should appear as the following. All 4 packets should be received  .
 
-![Correct Client IP Configurations and Successful Ping Attempt to the Server](..\screenshots\windows-11-successful-ping-1.png)
+![Correct Client IP Configurations and Successful Ping Attempt to the Server](../screenshots/windows-11-successful-ping-1.png)
 
 If you see: "Destination host unreachable", ensure both VMs are on Internal Network through VirtualBox's network settings
 
@@ -387,17 +387,17 @@ In order to do so perform the following inside of the client VM.
 4. Click **Domain or workgroup**
 5. Click **Change...**
 
-![](..\screenshots\windows-11-domain-change-1.png)
+![](../screenshots/windows-11-domain-change-1.png)
 
 6. Click Domain
 7. Enter your domain name, or use the assigned static IP Address of your server 
     - Both work because your DNS is already configured
 
-![](..\screenshots\windows-11-domain-change-2.png)
+![](../screenshots/windows-11-domain-change-2.png)
 
 8. When prompted, enter the Administrator login information that you created on your domain controller earlier.
 
-![](..\screenshots\windows-11-domain-change-3.png)
+![](../screenshots/windows-11-domain-change-3.png)
 
 ---
 
@@ -415,4 +415,4 @@ From the Windows Server VM:
 
 If the client appears, you are good to go!
 
-![Successful Domain Join](..\screenshots\windows-11-successful-domain-join.png)
+![Successful Domain Join](../screenshots/windows-11-successful-domain-join.png)
