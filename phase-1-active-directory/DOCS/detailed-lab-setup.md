@@ -21,7 +21,7 @@ From the VirtualBox home screen:
 
 Your initial settings should appear similar to the following image.
 
-![Windows Server Machine Name and Operating System Settings](..\screenshots\virtualbox-windows-server-machine-name-and-operating-system-settings.png)
+![Windows Server Machine Name and Operating System Settings](../screenshots/virtualbox-windows-server-machine-name-and-operating-system-settings.png)
 
 4. Click Next or **Specify virtual hardware** and **Specify virtual hard disk**
 5. Allocate your resources according to your specs and proceed
